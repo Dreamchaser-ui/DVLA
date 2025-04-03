@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle License Renewal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('WhatsApp Image 2025-02-13 at 8.22.07 PM.jpeg') no-repeat center center fixed;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .form-section, .records {
+            background: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label, input {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #218838;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background: #333;
+            color: white;
+        }
+
+                /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #00bfff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+                    /*Navigation Bar Styles */
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #007bff;
+                padding: 15px;
+                color: white;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                left: 0;
+                z-index: 1000;
+            }
+
+            nav .logo {
+                font-size: 22px;
+                font-weight: bold;
+            }
+
+            nav ul {
+                list-style: none;
+                display: flex;
+                padding: 0;
+            }
+
+            nav ul li {
+                margin: 0 15px;
+            }
+
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                padding: 10px 15px;
+                transition: 0.3s;
+            }
+
+            nav ul li a:hover {
+                background: #ffcc00;
+                color: black;
+                border-radius: 5px;
+            }
+                        /* Section Styling */
+            section {
+                padding: 80px 20px;
+                text-align: center;
+                margin-top: 50px;
+            }
+
+            section.active {
+                display: block;
+            }
+
+            .container {
+                width: 50%;
+                margin: auto;
+                background: #fff;
+                padding: 20px;
+                box-shadow: 0px 0px 10px gray;
+                border-radius: 5px;
+            }
+
+            /* Smooth Scroll */
+            html {
+                scroll-behavior: smooth;
+            }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vehicle License Renewal System</h1>
+    </header>
+
+        <!-- 🌟 Navigation Bar -->
+        <nav>
+            <div class="logo">🚗 License Renewal</div>
+            <ul>
+                <li><a href="#" data-section="home" class="active">Home</a></li>
+                <li><a href="#" data-section="about">About Us</a></li>
+                <li><a href="#" data-section="services">Services</a></li>
+                <li><a href="#" data-section="contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+
+        <!-- 🌟 Home Section -->
+    <section id="home" class="active">
+        <div class="container">
+            <h1>Welcome to Vehicle License Renewal</h1>
+            <p>Renew your vehicle license easily and quickly.</p>
+        </div>
+    </section>
+
+    <!-- 🌟 About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We provide vehicle license renewal services with efficiency and accuracy. Our goal is to make the process as seamless as possible for vehicle owners.</p>
+        </div>
+    </section>
+
+    <!-- 🌟 Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Vehicle License Renewal</li>
+                <li>Ownership Transfer Services</li>
+                <li>License Expiry Reminders</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 🌟 Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: support@vehiclerenewal.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+    </section>
+
+    
+    <section class="form-section">
+        <h2>Enter Customer Details</h2>
+        <form id="licenseForm">
+            <label for="carNumber">Car Number Plate:</label>
+            <input type="text" id="carNumber" required>
+
+            <label for="customerName">Customer Name:</label>
+            <input type="text" id="customerName" required>
+
+            <label for="expiryDate">License Expiry Date:</label>
+            <input type="date" id="expiryDate" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <section class="records">
+        <h2>Registered Vehicles</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Car Number Plate</th>
+                    <th>Customer Name</th>
+                    <th>Expiry Date</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody id="recordsTable">
+            </tbody>
+        </table>
+    </section>
+
+      <!-- 🌟 Footer Section -->
+      <footer>
+        <p>&copy; 2024 Vehicle License Renewal Company. All Rights Reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a> | 
+            <a href="#">Contact Us</a>
+        </p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
